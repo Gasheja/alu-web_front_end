@@ -219,6 +219,27 @@
   .col-1-2 {
     width: calc((100% / 2) - 2rem);
   }
+  @media (max-width: 767px){
+    section-padding: 5rem 1.5rem;
+    section-body-padding: 2rem 0 0;
+    ul.row {
+      flex-direction: column;
+      margin: 0;
+    }
+    .row {
+      flex-direction: column;
+      margin: 0;
+    }
+    [class*='col-'] {
+      margin: 0 0 3rem 0;
+    }
+    col-1-3 {
+      width: 100%;
+    }
+    col-1-2 {
+      width: 100%;
+    }
+  }
   
   /* Navbar
       ============================= */
@@ -268,7 +289,11 @@
     background-color: var(--color-primary);
     width: 100%;
   }
-  
+  @media (max-width: 767px){
+    navbar-menu{
+      display: none;
+    }
+  }
   
   /* Header
       ============================= */
