@@ -1,11 +1,8 @@
-$list_to_sort_1: john anna zoe kim felicia carrie;
-$list_to_sort_2: bob anna sylvain john ludo colin patrick;
+$list_to_sort: bob anna sylvain john ludo colin patrick;
 
-// Sort the lists
-$list_sorted_1: sort($list_to_sort_1);
-$list_sorted_2: sort($list_to_sort_2);
+// Sort the list
+$list_sorted: sort($list_to_sort);
 
-// Print the sorted lists in the debug output
-@debug $list_sorted_1;
-@debug $list_sorted_2;
+// Print the sorted list in the debug output
+@debug $list_sorted;
 
